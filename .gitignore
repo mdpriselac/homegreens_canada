@@ -1,3 +1,8 @@
 **/__pycache__/
 **/**/__pycache/
 .DS_Store
+**/.DS_Store
+**/**/.DS_store
+*.pyc
+**/*.pyc
+**/**/*.pyc
