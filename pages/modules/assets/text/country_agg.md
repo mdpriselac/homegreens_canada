@@ -1,0 +1,6 @@
+### Countries and Ratings
+In the table below, you can see how strongly connected a country is to a given quality range. Each column represents a quality bucket (1-7). Within each column countries are ordered by how distinctive they are to that quality bucket. The top country is the *most* distinctive of that category. The bottom country is the *least* distinctive of that quality bucket even though at least one coffee from that country appears in that quality range. Countries not listed in a column do not appear at all that quality bucket.
+
+This page provides some insight into how our predictive model is working. Countries that are higher up the lists in higher quality buckets are likelier to have higher quality coffees according to our model. Countries that are higher up in the lower quality buckets are likelier to have lower quality coffees according to our model.
+
+Finally, remember that there are so very few coffees scoring in the 7 range that we don't need to focus too closely on that bucket to draw too many conclusions.
