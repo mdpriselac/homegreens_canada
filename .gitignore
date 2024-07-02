@@ -6,5 +6,3 @@
 *.pyc
 **/*.pyc
 **/**/*.pyc
-
-requirements.txt
