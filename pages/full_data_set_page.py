@@ -43,7 +43,8 @@ def full_data_page(csv_path):
                  on_select='rerun')
     
     if len(selectable.selection.rows) > 0:
-        st.session_state.ind = selectable.selection.rows[0]
+        selected_row_df = df_filtered.iloc[selectable.selection.rows[0]].name
+        st.session_state.ind = selected_row_df
         if st.button(label='Click here for more information on your selected coffee'):
             st.switch_page('pages/individual_coffee_page.py')
     else:
