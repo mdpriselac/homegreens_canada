@@ -25,7 +25,7 @@ def load_front_page_data(csv_path):
 def full_data_page(csv_path):
     df_filtered = load_front_page_data(csv_path)
     st.header('Data Overview')
-    st.write("Below you will find the full data set. You can filter the data by selecting values in the sidebar. The data will update as you select filters. You can sort the data by clicking on the column headers. You can resize the columns by draagging them and resize the data frame by dragging the bottom right corner.")
+    st.write("Below you will find the full data set. You can filter the data by selecting values in the sidebar. The data will update as you select filters. You can sort the data by clicking on the column headers. You can resize the columns by dragging them and resize the data frame by dragging the bottom right corner. Clicking on the far lefthand side of a row will select that row. Clicking the button below will take you to a page with more information on the selected coffee.")
 
     # Add filters
     columns_to_filter = ['Country', 'Seller','Process','Expired?']
