@@ -27,22 +27,19 @@ In addition to data processing, we're also using the data collected for some fun
 
 ### Green Sellers
 #### Current Sellers listed
-- Cafe Kreyol
-- Captain's Coffee
-- Coffee Bean Corral
-- The Coffee Project
-- Copan/Alma
-- Hacea
-- Invalsa
-- Lost Dutchman
-- Primge Green Coffee
-- Roastmasters
-- Showroom Coffee
-- Smokin Beans
-- Sweet Marias
-- Theta Ridge
+
+- [GreenCoffeeCo](https://greencoffeeco.com/)
+- [Forward Coffee](https://forward.coffee/)
+- [Espresso Planet](https://www.espressoplanet.com/coffee-espresso/green-coffee-beans/)
+- [Green Beanery](https://green-beanery.myshopify.com/)
+- [IDrinkCoffee](https://idrinkcoffee.com/collections/green-coffee)
+- [Pre-Umber](https://www.pre-umber.com/?shpxid=d23b5936-ac41-457d-86c0-6fa6d89d9308)
+- [Northern Coffee](https://northern-coffee.ca/)
+- [Specialty Coffee](https://specialtycoffee.ca/pages/roasted-coffee)
+- [Eight Ounce Coffee](https://eightouncecoffee.ca)
+    - *Note*:this doesn't always have great scrapable info and will be a test case for future image based scraping since a lot of the good info for these is tucked away in an image from Apex rather than available as text on the website.
 
 #### Planned Additions
-- Royal Coffee Crown Jewels
-- Bodhileaf
-- Burman
+- [Cafe Crema](https://cafecrema.square.site/)
+- [U Roast It Coffee](https://www.u-roast-it-coffee.ca/)
+- A few others will be considered (Catalogue, West Coast Coffeele Traders, Single Origin) but it's not clear to me yet if they sell in sizes for a home roaster.

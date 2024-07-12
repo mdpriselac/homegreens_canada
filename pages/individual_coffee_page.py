@@ -1,8 +1,15 @@
 import streamlit as st
 import pandas as pd
 from pages.modules.flavor_wheel_gen import flavor_wheel_gen
-from pages.modules.df_location import df_csv_path
+from pages.modules.df_location import s3_client, bucket, db_path
 
+@st.cache_data
+def load_full_dataset():
+    obj = s3_client.get_object(Bucket=bucket, Key=db_path)
+    in_df = pd.read_csv(obj['Body'],index_col=0)
+    out_df = in_df.copy()
+    return out_df
+    
 
 
 if 'ind' not in st.session_state:
@@ -12,7 +19,7 @@ def coffee_info(coffee_data):
     coffee_info = coffee_data
     st.title(f"{coffee_info['Name']}")
     
-    key_cols = ['seller','Name','country_final','subregion_final','micro_final','Flavor Notes','process_type','Varietal Cleaned','Score','first_date_observed','expired']
+    key_cols = ['seller','Name','country_final','subregion_final','micro_final','Flavor Notes','process_type','Varietal Cleaned','first_date_observed','expired']
     empty_info = [k for k in key_cols if coffee_info[k]=='' or str(coffee_info[k]).lower().strip()=='none' or str(coffee_info[k]).lower().strip()=='nan' or str(coffee_info[k]).strip().lower()=='unknown']
     
     # Let's do a text block introducing the information on this page
@@ -56,11 +63,10 @@ def coffee_info(coffee_data):
     flav_graphic_col.pyplot(fig=flav_graphic, clear_figure=True, use_container_width=True)
     flav_c.write('See the About section for a fully completed version of the flavor wheel that this model is based on.')
 
-def ind_coffee_page(csv_path,index_val):
-    
-    full_df = pd.read_csv(csv_path,index_col=0)
+def ind_coffee_page(index_val):
+    full_df = load_full_dataset()
     index_no = st.sidebar.number_input('Enter the coffee number', min_value=0, max_value=len(full_df)-1, value=index_val, step=1)
     coffee_data = full_df.iloc[index_no]
     coffee_info(coffee_data)
 
-ind_coffee_page(df_csv_path,st.session_state.ind)
+ind_coffee_page(st.session_state.ind)

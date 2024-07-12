@@ -1,9 +1,9 @@
 
-Our goal is straightforward: make it easy to find and compare green coffees for sale in the USA. Below you will find a description of what you can find and do here wit the information we have gathered and studied.
+Our goal is straightforward: make it easy to find and compare green coffees for sale in Canada. Below you will find a description of what you can find and do here wit the information we have gathered and studied.
 
 ### A Single List
 
-We've scoured the internet and many of the most reputable green sellers in the USA to put together a list of all green coffees currently for sale from these sellers. The list is available via the All Green Coffees option in the navigation bar to the left. You can sort coffees by origin, seller, and whether or not the coffee is still for sale. Shortly you'll be able to sort by arrival date as well. You can find a list of which sellers we're following in the about our data collection tab above.
+We've scoured the internet and many of the most reputable green sellers in Canada to put together a list of all green coffees currently for sale from these sellers. The list is available via the All Green Coffees option in the navigation bar to the left. You can sort coffees by origin, seller, and whether or not the coffee is still for sale. Shortly you'll be able to sort by arrival date as well. You can find a list of which sellers we're following in the about our data collection tab above.
 
 ### Overall Data on New Arrivals
 
